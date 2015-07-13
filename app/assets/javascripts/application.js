@@ -9,39 +9,11 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require jquery-2.1.4
+ 
+//= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-//= require jquery.validate
+//= require rails.validations
 
 
-	$(document).ready(function() {
-
-		$("#new_user").validate({
-			debug: true,
-		    rules: {
-				name: "required", 
-				phone_number: "required",
-         	   	email: { 
-                 	required: true, 
-               	  	email: true
-				}
-			},
-			messages: {
-				name: {
-					 required: "Name invalid!"
-				},
-				phone_number: {
-					 required: "Name invalid!"
-				},
-				email: {
-					required: "null",
-					email: "uncorrect email"
-				}
-			}
-			
-		});
-		
-	});
