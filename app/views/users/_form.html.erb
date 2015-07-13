@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 
 <%= form_for @user,validate: true  do |f| %>
 
 
+=======
+<%= form_for @user  do |f| %>
+ 
+>>>>>>> origin/master
  <% if @user.errors.any? %>
    <div id="error_explanation">
      <h2><%= pluralize(@user.errors.count, "error") %> prohibited
